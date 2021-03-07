@@ -19,9 +19,11 @@ import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
-import com.example.androiddevchallenge.ui.theme.CountdownApp
+import com.example.androiddevchallenge.ui.CountdownApp
+import dev.chrisbanes.accompanist.insets.ExperimentalAnimatedInsets
 
 class MainActivity : AppCompatActivity() {
+    @ExperimentalAnimatedInsets
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         WindowCompat.setDecorFitsSystemWindows(window, false)
